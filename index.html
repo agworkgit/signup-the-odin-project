@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/css/index.css">
+    <title>Signup Validation</title>
+</head>
+
+<body>
+    <section class='main-wrapper'>
+        <section class='left-panel'>
+            <div class='left-panel-bg'></div>
+            <div class='logo'>
+                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+                    alt="logo image">
+            </div>
+        </section>
+        <section class='photo-credits'>
+            <div>
+                <p>Photo by <a href="https://unsplash.com/@opentab?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">OpenTab</a> on <a href="https://unsplash.com/photos/a-group-of-people-standing-around-a-waterfall-cOooytrD2Fk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </p>
+            </div>
+        </section>
+        <section class='right-panel'>
+            <div class='header-text'>
+                <p class='text-title'>This is not a real online service! You know you need something like this in your
+                    life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <form action="" method="">
+                <div class="form-container">
+                    <h1 class="form-header">
+                        Get started
+                    </h1>
+                    <div class="row">
+                        <div class="col-1">
+                            <div class="input-container">
+                                <span>
+                                    First name
+                                </span>
+                                <label for="f-name"></label>
+                                <input type="text" name="f-name" id="f-name" required class='input-style'>
+                                <div class="error"></div>
+                            </div>
+
+                            <div class="input-container">
+                                <span>
+                                    Last name
+                                </span>
+                                <label for="l-name"></label>
+                                <input type="text" name="l-name" id="l-name" required class='input-style'>
+                                <div class="error"></div>
+                            </div>
+
+                            <div class="input-container">
+                                <span>
+                                    E-mail
+                                </span>
+                                <label for="mail">
+                                </label>
+                                <input type="email" name="mail" id="mail" required class='input-style'>
+                                <div class="error"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="input-container">
+                                <span>Phone</span>
+                                <label for="phone">
+                                </label>
+                                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{5}" required
+                                    class='input-style'>
+
+                                <div class="error"></div>
+                            </div>
+
+                            <div class="input-container">
+                                <span>Password</span>
+                                <label for="user-password"></label>
+                                <input type="password" name="user-password" id="user-password" onChange='onChange()'
+                                    class="input-style" required>
+
+                                <div class="error"></div>
+                            </div>
+
+                            <div class="input-container">
+                                <span>
+                                    Confirm Password
+                                </span>
+                                <label for="user-password-confirm"></label>
+                                <input type="password" name="user-password-confirm" id="user-password-confirm"
+                                    onChange='onChange()' class="input-style" required>
+                                <div class="error"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="account-group">
+                        <button type="submit" class="create-button">Create Account</button>
+                        <p class="create-text">
+                            Already have an account? <span class="create-text-log"> Log in</span>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </section>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
