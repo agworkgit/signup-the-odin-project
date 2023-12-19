@@ -42,6 +42,7 @@ body {
     justify-content: center;
     color: var(--txt-bright);
     background-color: var(--peach-opaque);
+    font-size: clamp(1.125rem, 1.0608rem + 0.1342vw, 1.3125rem);
 }
 
 .material-icons {
@@ -88,7 +89,6 @@ body {
     border-radius: 10px 10px 0px 0px;
     word-wrap: break-word;
     width: 25%;
-    font-size: clamp(0.5625rem, 0.5294rem + 0.1765vw, 0.75rem);
     text-align: center;
 }
 
@@ -103,11 +103,11 @@ body {
     border-radius: 0px 0px 10px 10px;
     word-wrap: break-word;
     width: 25%;
-    font-size: clamp(0.5625rem, 0.5294rem + 0.1765vw, 0.75rem);
 }
 
 .photo-credits p {
     text-align: center;
+    font-size: clamp(1rem, 0.9572rem + 0.0895vw, 1.125rem);
 }
 
 .logo > img {
@@ -127,7 +127,7 @@ body {
     margin-top: 4%;
     margin-inline: 5%;
     color: var(--text-bright);
-    font-size: clamp(1rem, 0.9118rem + 0.4706vw, 1.5rem);
+    font-size: clamp(1.3125rem, 1.2483rem + 0.1342vw, 1.5rem);
 }
 
 .form-header {
@@ -135,6 +135,7 @@ body {
     font-weight: 400;
     margin-bottom: 2.5%;
     color: var(--text-bright);
+    font-size: clamp(1.125rem, 1.0608rem + 0.1342vw, 1.3125rem);
 }
 
 .text-title {
@@ -178,6 +179,7 @@ body {
 
 .input-container>input {
     flex: 1 1 100%;
+    font-size: clamp(1.125rem, 1.0608rem + 0.1342vw, 1.3125rem);
 }
 
 /* .box {
@@ -191,7 +193,7 @@ body {
 .input-container span {
     text-align: left;
     font-weight: 200;
-    font-size: clamp(0.75rem, 0.7059rem + 0.2353vw, 1rem);
+    font-size: clamp(1.125rem, 1.0608rem + 0.1342vw, 1.3125rem);
 }
 
 .input-style {
@@ -199,6 +201,7 @@ body {
     border: 1px solid var(--peach);
     border-radius: 5px;
     padding: 7px;
+    width: 50%;
 }
 
 
@@ -229,7 +232,7 @@ body {
     color: var(--veridian);
     background-color: rgba(0, 0, 0, 0);
     margin-block: 2.5%;
-    font-size: clamp(0.75rem, 0.7059rem + 0.2353vw, 1rem);
+    font-size: clamp(1.125rem, 1.0608rem + 0.1342vw, 1.3125rem);
 }
 
 .create-button:hover {
@@ -240,7 +243,7 @@ body {
 
 .create-text {
     font-weight: 200;
-    font-size: clamp(0.75rem, 0.7059rem + 0.2353vw, 1rem);
+    font-size: clamp(1rem, 0.9572rem + 0.0895vw, 1.125rem);
     margin-top: 5%;
 }
 
@@ -276,6 +279,11 @@ body {
         width: auto;
         display: block;
         background-color: var(--rich-black);
+        font-size: clamp(1rem, 1rem + 0.6536vw, 1.3125rem);
+    }
+
+    .photo-credits p {
+        font-size: clamp(0.75rem, 0.75rem + 0.5229vw, 1rem);
     }
 
     .main-wrapper {
@@ -313,6 +321,14 @@ body {
         width: 100%;
     }
 
+    .input-container>input {
+        font-size: clamp(1rem, 1rem + 0.6536vw, 1.3125rem);
+    }
+
+    .input-container span {
+       font-size: clamp(1rem, 1rem + 0.6536vw, 1.3125rem); 
+    }
+
     .create-button {
         width: 100%;
     }
@@ -320,6 +336,11 @@ body {
     .header-text {
         margin-top: 5%;
         margin-inline: 7.5%;
+        font-size: clamp(1.3125rem, 1.3125rem + 0.3922vw, 1.5rem);
+    }
+
+    .form-header {
+        font-size: clamp(1rem, 1rem + 0.6536vw, 1.3125rem);
     }
 
     .form-container {
@@ -349,7 +370,12 @@ body {
         margin-block: 5%;
     }
 
+    .create-button {
+    font-size: clamp(1rem, 1rem + 0.6536vw, 1.3125rem);
+    }
+
     .create-text {
         margin-top: 5%;
+        font-size: clamp(0.75rem, 0.75rem + 0.5229vw, 1rem);
     }
 }
